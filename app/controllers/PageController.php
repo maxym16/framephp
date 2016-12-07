@@ -6,7 +6,7 @@ namespace app\controllers;
  * Description of Page controller
  * @author Maxym
  */
-class Page extends App{
+class PageController extends AppController{
     public function viewAction() {
         
     }

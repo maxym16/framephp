@@ -4,6 +4,7 @@ namespace vendor\core;
 
 /**
  * Підключення до БД
+ * через PDO - PHP Data Objects  
  * Singlton, створює лише один об'єкт
  * @author Maxym
  */
@@ -36,22 +37,22 @@ class Db {
      * для відповідей типа true/false(fe: create,delete)
      * без обміна даними з БД
      */
-    public function execute($sql){
+    public function execute($sql,$params=[]){
         self::$countSql++;//підрахунок кількості запитів
         self::$queries=$sql;//записуємо sql-запит
-        $stmt=  $this->pdo->prepare($sql);
-        return $stmt->execute();
+        $stmt=$this->pdo->prepare($sql);
+        return $stmt->execute($params);
     }
     
     /**
      * підготовлюємо sql-запит
      * для обміна даними з БД(fe: select)
      */
-    public function query($sql){
+    public function query($sql, $params=[]){
         self::$countSql++;//підрахунок кількості запитів
         self::$queries=$sql;//записуємо sql-запит
-        $stmt =  $this->pdo->prepare($sql);
-        $res = $stmt->execute();
+        $stmt = $this->pdo->prepare($sql);
+        $res = $stmt->execute($params);
         if($res!==false){
             return $stmt->fetchAll();
             //return $stmt->fetchAll(\PDO::FETCH_ASSOC);//дані даються у вигляді асоціативного масиву

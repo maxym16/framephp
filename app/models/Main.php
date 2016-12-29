@@ -8,5 +8,6 @@ use vendor\core\base\Model;
  * @author Maxym
  */
 class Main extends Model{
-    public $table = 'posts';
+    public $table = 'posts';//ім'я таблиці з якою працює модель
+    //public $pk = 'category';//перевизначаємо назву первинного ключа пошуку
 }

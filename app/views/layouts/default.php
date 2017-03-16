@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DefaultTemplate | <?=$title?></title>
+    <title>DefaultTemplate | <?= $meta['title']?></title>
+    <meta name="description" content="<?= $meta['desc']?>">
+    <meta name="keywords" content="<?= $meta['keywords']?>">
 
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,9 +23,10 @@
     <div class="container">
     <?php if(!empty($menu)): ?>
         <ul class="nav nav-pills">
-          <li><a href="page/about">About</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/page/about">About</a></li>
         <?php foreach($menu as $item): ?>
-          <li><a href="category/<?= $item['id'] ?>"><?= $item['title'] ?></a></li>
+          <li><a href="/category/<?= $item['id'] ?>"><?= $item['title'] ?></a></li>
         <?php endforeach; ?>
         </ul>    
     <?php endif;?>    

@@ -18,9 +18,15 @@
     <![endif]-->
   </head>
   <body>
+    <div class="container">
+    <ul class="nav nav-pills">
+    <?php foreach($menu as $item): ?>
+      <li><a href="category/<?= $item['id'] ?>"><?= $item['title'] ?></a></li>
+    <?php endforeach; ?>
+    </ul>    
     <h1>Default Template. Framework FrameWorkPHP.</h1>
     <?=$contents?>
-
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

@@ -18,7 +18,7 @@ class MainController extends AppController{
     
     public function indexAction() {
         //echo '<b>Main::index</b> ';
-        $model = new Main;//достатньо одного об'єкта моделі, щоби підключитись до БД
+        //$model = new Main;//достатньо одного об'єкта моделі, щоби підключитись до БД
         $posts=R::findAll('posts');
         $menu=$this->menu;
         //$posts = $model ->findAll();

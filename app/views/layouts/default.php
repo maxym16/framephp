@@ -19,11 +19,14 @@
   </head>
   <body>
     <div class="container">
-    <ul class="nav nav-pills">
-    <?php foreach($menu as $item): ?>
-      <li><a href="category/<?= $item['id'] ?>"><?= $item['title'] ?></a></li>
-    <?php endforeach; ?>
-    </ul>    
+    <?php if(!empty($menu)): ?>
+        <ul class="nav nav-pills">
+          <li><a href="page/about">About</a></li>
+        <?php foreach($menu as $item): ?>
+          <li><a href="category/<?= $item['id'] ?>"><?= $item['title'] ?></a></li>
+        <?php endforeach; ?>
+        </ul>    
+    <?php endif;?>    
     <h1>Default Template. Framework FrameWorkPHP.</h1>
     <?=$contents?>
     </div>

@@ -7,7 +7,10 @@ namespace app\controllers;
  * @author Maxym
  */
 class PageController extends AppController{
+
     public function viewAction() {
-        
+        $title='Page';
+        $menu=$this->menu;
+        $this->set(compact('title','menu'));
     }
 }

@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use app\models\Main;
 use R;//RedBeanPHP для роботи з БД
-
+use \vendor\core\App;
 
 /**
  * Main 
@@ -17,6 +17,7 @@ class MainController extends AppController{
     //public $layout='main';
     
     public function indexAction() {
+        //App::$app->getList();
         //echo '<b>Main::index</b> ';
         //$model = new Main;//достатньо одного об'єкта моделі, щоби підключитись до БД
         $posts=R::findAll('posts');

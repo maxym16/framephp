@@ -33,6 +33,8 @@ spl_autoload_register(function($class){
         require_once $file;
     }
 });
+//для доступу до об'єктів реєстра(Registry)
+new \vendor\core\App;
 //$router=new Router();
 //приклад статичних маршрутів :
 //Router::add('posts/add',['controller'=>'Posts','action'=>'add']);//1-ше правило

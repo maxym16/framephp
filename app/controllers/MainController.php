@@ -19,9 +19,15 @@ class MainController extends AppController{
     public function indexAction() {
         //App::$app->getList();
         //echo '<b>Main::index</b> ';
-        //$model = new Main;//достатньо одного об'єкта моделі, щоби підключитись до БД
-        $posts=R::findAll('posts');
+        $model = new Main;//достатньо одного об'єкта моделі, щоби підключитись до БД
+        //данні або з кеша або з БД
+        $posts=App::$app->cache->get('posts');
+        if(!$posts){
+            $posts=R::findAll('posts');
+            App::$app->cache->set('posts',$posts);
+        }
         $post=R::findOne('posts','id = 2');
+//        App::$app->cache->set('posts',$posts,3600*24);//закешувати на 24 години
         $menu=$this->menu;
         //$posts = $model ->findAll();
         //$post=$model->findOne(2);

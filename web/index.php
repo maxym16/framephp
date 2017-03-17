@@ -8,6 +8,7 @@ define('ROOT', dirname(__DIR__));//костанта, вказує на теку 
 define('CORE', dirname(__DIR__).'/vendor/core');//костанта, вказує на теку /vendor/core
 define('LIBS', dirname(__DIR__).'/vendor/libs');//костанта, вказує на теку /vendor/libs
 define('APP', dirname(__DIR__).'/app');//костанта, вказує на теку /app
+define('CACHE', dirname(__DIR__).'/tmp/cache');//костанта, вказує на теку /tmp/cache
 define('LAYOUT','default');//шаблон по замовчанню
 
 //echo $query=' параметри запиту = '.$_SERVER['QUERY_STRING'];//зчитуємо параметри запиту і виводимо на екран

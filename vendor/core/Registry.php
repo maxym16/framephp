@@ -8,8 +8,10 @@ namespace vendor\core;
  * @author Maxym
  */
 class Registry {
+    use TSingletone;
+    
     public static $objects = [];
-    protected static $instance;
+//    protected static $instance;
     
     protected function __construct() {
         require_once ROOT.'/config/config.php';
@@ -18,14 +20,14 @@ class Registry {
         }
     }
     
-    public static function instance(){
+/*    public static function instance(){
         //сінглтон,якщо підключення до БД нема,то створимо його
         if(self::$instance===null){
             self::$instance=new self;
         }
         return self::$instance;
     }
-
+*/
     /*
      * при звернені до властивості, якої немає у об'єкта
      */

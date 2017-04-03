@@ -29,8 +29,10 @@ use R;//RedBeanPHP для роботи з БД
  * @author Maxym
  */
 class Db {
+    use TSingletone;
+    
     protected $pdo;//об'єкт,вказівник на відкрите підключення до БД
-    protected static $instance;
+//    protected static $instance;
     public static $countSql=0;//підрахунок кількості запитів
     public static $queries=[];//зберігаємо всі наші запити
 
@@ -51,14 +53,14 @@ class Db {
 */        
     }
     
-    public static function instance(){
+/*    public static function instance(){
         //якщо підключення до БД нема,то створимо його
         if(self::$instance===null){
             self::$instance=new self;
         }
         return self::$instance;
     }
-    
+*/    
     /**
      * підготовлюємо sql-запит
      * PDO::prepare-Готує запит до виконання і повертає асоційований з цим запитом об'єкт

@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DefaultTemplate | <?= $meta['title']?></title>
-    <meta name="description" content="<?= $meta['desc']?>">
-    <meta name="keywords" content="<?= $meta['keywords']?>">
+    <?php \vendor\core\base\View::getMeta()?>
+<!--    <title>DefaultTemplate | <? = $meta['title']?></title>
+    <meta name="description" content="<? = $meta['desc']?>">
+    <meta name="keywords" content="<? = $meta['keywords']?>">
+-->
 
     <!-- Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,5 +39,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <?php 
+        foreach ($scripts as $script){
+            echo $script;
+        }
+    ?>
   </body>
 </html>

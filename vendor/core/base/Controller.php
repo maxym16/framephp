@@ -57,4 +57,19 @@ abstract class Controller {
     public function set($varia){
         $this->varia=$varia;
     }
+    
+    /**
+     * перевірка на Ajax-запит
+     * true or false
+     * взято з Yii2
+     */
+    public function isAjax()
+    {
+        return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+    }
+    
+    public function loadView($view,$vars=[]){
+        extract($vars);
+        require APP . "/views/{$this->route['controller']}/{$view}.php";
+    }
 }

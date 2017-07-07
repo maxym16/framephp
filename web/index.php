@@ -3,6 +3,7 @@ error_reporting(-1);//виводити всі помилки
 use vendor\core\Router;
 
 //echo __FILE__.'<br />';//шлях до файла
+define("DEBUG", 1);//development mode
 define('WWW', __DIR__);//костанта, вказує на поточну теку /web
 define('ROOT', dirname(__DIR__));//костанта, вказує на теку корня /fwphp
 define('CORE', dirname(__DIR__).'/vendor/core');//костанта, вказує на теку /vendor/core

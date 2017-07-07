@@ -75,14 +75,17 @@ class Router{
                     //запускає render() з базового View.php,який підключає шаблон і вид
                     $contObj->getView();
                 } else {
-                    echo "Метод <b>$controller::$action</b> не знайдено";
+                    //echo "Метод <b>$controller::$action</b> не знайдено";
+                    throw new \Exception("Метод <b>$controller::$action</b> не знайдено",404);
                 }
             } else {
-                echo "Контролер <b>$controller</b> не існує";
+                //echo "Контролер <b>$controller</b> не існує";
+                throw new \Exception("Контролер <b>$controller</b> не існує",404);
             }
         } else {
-            http_response_code(404);
-            include '404.html';
+            //http_response_code(404);
+            //include '404.html';//підключаємо шаблон для помилки
+            throw new \Exception("Сторінку не знайдено",404);
         }
     }
     

@@ -1,6 +1,7 @@
 <h1>vyd Main -> INDEX</h1>
 <code><?=__FILE__?></code>
 <div class="container">
+    <div id="answer"></div>
     <button class="btn btn-default" id="send">Ajax</button>
   <?php if(!empty($posts)): ?>
     <?php foreach ($posts as $post): ?>
@@ -22,7 +23,9 @@ $(function(){
             type: 'post',
             data: {'id':2},
             success: function(res){
-                console.log(res);
+                var data = JSON.parse(res);
+                $('#answer').html('<p>Answer: '+ data.answer +'</p>Code: '+ data.code);
+                        //console.log(res);
             },
             error: function(){
                 alert('Error!');

@@ -8,3 +8,7 @@
 =========
 [2017-07-07 15:28:58] Text error: Undefined variable: test | File: C:\xampp\htdocs\framephp\app\controllers\MainController.php | String: 24 
 =========
+[2017-07-08 14:53:49] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-08 14:53:49] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========

@@ -3,6 +3,8 @@
 <div class="container">
     <div id="answer"></div>
     <button class="btn btn-default" id="send">Ajax</button>
+    <br>
+    <?php new \vendor\widgets\menu\Menu();?>
   <?php if(!empty($posts)): ?>
     <?php foreach ($posts as $post): ?>
         <div class="panel panel-default">

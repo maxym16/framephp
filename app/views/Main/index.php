@@ -23,9 +23,10 @@ $(function(){
             type: 'post',
             data: {'id':2},
             success: function(res){
-                var data = JSON.parse(res);
-                $('#answer').html('<p>Answer: '+ data.answer +'</p>Code: '+ data.code);
-                        //console.log(res);
+                //var data = JSON.parse(res);
+                //$('#answer').html('<p>Answer: '+ data.answer +'</p>Code: '+ data.code);
+                $('#answer').html(res);
+                //console.log(res);
             },
             error: function(){
                 alert('Error!');

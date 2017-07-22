@@ -50,3 +50,45 @@
 =========
 [2017-07-22 13:57:18] Text error: Контролер <b>app\controllers\AdminController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
 =========
+[2017-07-22 14:35:16] Text error: Контролер <b>app\controllers\UserController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========
+[2017-07-22 14:36:30] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========
+[2017-07-22 14:36:39] Text error: Контролер <b>app\controllers\UserController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========
+[2017-07-22 15:23:02] Text error: Контролер <b>app\controllers\UserController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:23:39] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:24:50] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:25:17] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:25:23] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:25:36] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 85 
+=========
+[2017-07-22 15:31:20] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 90 
+=========
+[2017-07-22 15:32:17] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 90 
+=========
+[2017-07-22 15:33:08] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 90 
+=========
+[2017-07-22 15:36:15] Text error: Контролер <b>app\controllers\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 90 
+=========
+[2017-07-22 15:39:47] Text error: Контролер <b>app\controllers\admin\TestController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 90 
+=========
+[2017-07-22 16:09:11] Text error: Метод <b>app\controllers\admin\TestController::viewAction</b> не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 86 
+=========
+[2017-07-22 16:47:38] Text error: Class 'vendor\core\base\Exception' not found | File: C:\xampp\htdocs\framephp\vendor\core\base\View.php | String: 62 
+=========
+[2017-07-22 16:48:17] Text error: <p>Не знайдено вид <b>C:\xampp\htdocs\framephp/app/views/admin\Test/test.php</b></p> | File: C:\xampp\htdocs\framephp\vendor\core\base\View.php | String: 62 
+=========
+[2017-07-22 16:49:46] Text error: <p>Не знайдено вид <b>C:\xampp\htdocs\framephp/app/views/admin\Test/test.php</b></p> | File: C:\xampp\htdocs\framephp\vendor\core\base\View.php | String: 62 
+=========
+[2017-07-22 16:49:47] Text error: <p>Не знайдено вид <b>C:\xampp\htdocs\framephp/app/views/admin\Test/test.php</b></p> | File: C:\xampp\htdocs\framephp\vendor\core\base\View.php | String: 62 
+=========
+[2017-07-22 16:51:52] Text error: <p>Не знайдено вид <b>C:\xampp\htdocs\framephp/app/views/admin\Test/test.php</b></p> | File: C:\xampp\htdocs\framephp\vendor\core\base\View.php | String: 62 
+=========
+[2017-07-22 17:39:43] Text error: Undefined variable: test | File: C:\xampp\htdocs\framephp\app\views\admin\User\index.php | String: 3 
+=========

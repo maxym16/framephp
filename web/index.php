@@ -47,6 +47,10 @@ new \vendor\core\App;
 Router::add('^page/(?P<action>[a-z-]+)/(?P<alias>[a-z-]+)$',['controller'=>'Page']);
 Router::add('^page/(?P<alias>[a-z-]+)$',['controller'=>'Page','action'=>'view']);
 
+//доступ до адмінки
+Router::add('^admin$',['controller'=>'User','action'=>'index','prefix'=>'admin']);
+Router::add('^admin/?(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$',['prefix'=>'admin']);
+
 //^-початок рядка, $-кінець рядка,дефолтне правило
 Router::add('^$',['controller'=>'Main','action'=>'index']);
 //2-ге дефолтне правило верифікації з ключами-аліасами ?P<controller>

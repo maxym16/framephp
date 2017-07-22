@@ -53,12 +53,13 @@ class View {
      */
     public function render($varia){
         if(is_array($varia)) {extract($varia);}
-        $file_view=APP."/views/{$this->route['controller']}/{$this->view}.php";
+        $file_view=APP."/views/{$this->route['prefix']}{$this->route['controller']}/{$this->view}.php";
         ob_start();//кладемо виведення $file_view в буфер обміну
         if(is_file($file_view)){
             require $file_view;
         } else {
-            echo "<p>Не знайдено вид <b>{$file_view}</b></p>";
+            //echo "<p>Не знайдено вид <b>{$file_view}</b></p>";
+            throw new \Exception("<p>Не знайдено вид <b>{$file_view}</b></p>",404);
         }
         //очищаємо буфер обміну і кладемо вид в $contents,щоби потім вставити в шаблоні
         $contents = ob_get_clean();
@@ -74,7 +75,8 @@ class View {
                 }
                 require $file_layout;
             } else {
-                echo "<p>Не знайдено шаблон <b>{$file_layout}</b></p>";
+                //echo "<p>Не знайдено шаблон <b>{$file_layout}</b></p>";
+                throw new \Exception("<p>Не знайдено шаблон <b>{$file_layout}</b></p>",404);
             }
         }
     }

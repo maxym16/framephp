@@ -2,24 +2,52 @@
 
 namespace vendor\widgets\menu;
 
+use vendor\libs\Cache;
+
 class Menu {
     protected $data;
     protected $tree;
     protected $menuHtml;
     protected $tpl;//шлях до шаблону
-    protected $container;//в який тег буде загорнуте меню
-    protected $table;//таблиця БД з якої беруться дані(мають бути поля id.title,parent)
-    protected $cache;
-    
-    public function __construct() {
+    protected $container = 'ul';//в який тег буде загорнуте меню
+    protected $class = 'menu';
+    protected $table = 'categories';//таблиця БД з якої беруться дані(мають бути поля id.title,parent)
+    protected $cache = 3600;
+    protected $cacheKey = 'fw_menu';
+
+
+    public function __construct($options=[]) {
+        $this->tpl = __DIR__ .'/menu_tpl/menu.php';
+        $this->getOptions($options);
         $this->run();
         //echo 'Widget Menu';
     }
     
+    protected function getOptions($options){
+        foreach ($options as $k => $v){
+            if(property_exists($this,$k)){
+                $this->$k = $v;
+            }
+        }
+    }
+    
+    protected function output(){
+        echo "<{$this->container} class='{$this->class}'>";
+            echo $this->menuHtml;
+        echo "</{$this->container}>";
+    }
+
     protected function run(){
-        $this->data = \R::getAssoc("SELECT * FROM categories");
-        $this->tree = $this->getTree();
-        debug($this->tree);
+        $cache = new Cache();
+        $this->menuHtml = $cache->get($this->cacheKey);
+        if (!$this->menuHtml){
+            $this->data = \R::getAssoc("SELECT * FROM {$this->table}");
+            $this->tree = $this->getTree();
+            $this->menuHtml = $this->getMenuHtml($this->tree);
+            $cache->set($this->cacheKey, $this->menuHtml, $this->cache);
+        }
+        $this->output();
+        //debug($this->tree);
     }
     
     protected function getTree(){
@@ -36,11 +64,17 @@ class Menu {
     }
     
     protected function getMenuHtml($tree,$tab=''){
-        
+        $str = '';
+        foreach ($tree as $id => $category){
+            $str .= $this->catToTemplate($category, $tab, $id);
+        }
+        return $str;
     }
     
     protected function catToTemplate($category,$tab,$id){
-        
+        ob_start();
+        require $this->tpl;
+        return ob_get_clean();
     }
     
 }

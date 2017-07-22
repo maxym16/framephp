@@ -12,3 +12,35 @@
 =========
 [2017-07-08 14:53:49] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
 =========
+[2017-07-10 17:37:26] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-10 17:37:26] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-20 18:15:44] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-20 18:15:44] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-20 22:06:39] Text error: require(C:\xampp\htdocs\framephp\app\views\Main/menu/select.php): failed to open stream: No such file or directory | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 67 
+=========
+[2017-07-22 10:26:13] Text error: require(C:\xampp\htdocs\framephp\app\views\Main/menu/select.php): failed to open stream: No such file or directory | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 67 
+=========
+[2017-07-22 10:26:13] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-22 10:26:13] Text error: Сторінку не знайдено | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 88 
+=========
+[2017-07-22 10:26:13] Text error: require(C:\xampp\htdocs\framephp\app\views\Main/menu/select.php): failed to open stream: No such file or directory | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 67 
+=========
+[2017-07-22 10:47:32] Text error: require(C:\xampp\htdocs\framephp\app\views\Main/menu/select.php): failed to open stream: No such file or directory | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 67 
+=========
+[2017-07-22 10:47:34] Text error: require(C:\xampp\htdocs\framephp\app\views\Main/menu/select.php): failed to open stream: No such file or directory | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 67 
+=========
+[2017-07-22 11:38:31] Text error: Use of undefined constant key - assumed 'key' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
+=========
+[2017-07-22 11:38:55] Text error: syntax error, unexpected ':', expecting ',' or ')' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
+=========
+[2017-07-22 11:43:57] Text error: syntax error, unexpected ':', expecting ',' or ')' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
+=========
+[2017-07-22 11:43:59] Text error: syntax error, unexpected ':', expecting ',' or ')' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
+=========
+[2017-07-22 11:44:09] Text error: syntax error, unexpected ':', expecting ',' or ')' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
+=========

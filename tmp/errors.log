@@ -44,3 +44,5 @@
 =========
 [2017-07-22 11:44:09] Text error: syntax error, unexpected ':', expecting ',' or ')' | File: C:\xampp\htdocs\framephp\vendor\widgets\menu\Menu.php | String: 47 
 =========
+[2017-07-22 13:46:32] Text error: Контролер <b>app\controllers\AdminController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========

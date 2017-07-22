@@ -46,3 +46,7 @@
 =========
 [2017-07-22 13:46:32] Text error: Контролер <b>app\controllers\AdminController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
 =========
+[2017-07-22 13:55:31] Text error: Контролер <b>app\controllers\AdminController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========
+[2017-07-22 13:57:18] Text error: Контролер <b>app\controllers\AdminController</b> не існує | File: C:\xampp\htdocs\framephp\vendor\core\Router.php | String: 83 
+=========

@@ -1,5 +1,5 @@
 <?php
-error_reporting(-1);//виводити всі помилки
+//error_reporting(-1);//виводити всі помилки
 use vendor\core\Router;
 
 //echo __FILE__.'<br />';//шлях до файла
